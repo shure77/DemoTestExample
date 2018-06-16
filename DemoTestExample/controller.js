@@ -4,15 +4,11 @@ $(document).ready(function () {
 
     switchView("page1");
 
-
-    $(".projectName").click(function (event) {
-        parseProjectId(data);
-    });
-    
     LoadOverviewProjectData(onError, onSuccess);
     function onSuccess(data) {
         loadProjectData(data);
-        bindGetDetails();   
+        bindGetDetails();
+
         }
     function onError(data) {
         console.log("Error");

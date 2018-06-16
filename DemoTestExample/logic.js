@@ -4,10 +4,9 @@
         var projectDate = value['date'];
         var projectId = value['projectId'];
         var projectRow = "<tr class='getDetails'> <td class='projectName'>" + projectName + "</td><td>"+ projectDate + "</td></tr>";
-        $(".addProjectRow").append(projectRow);
-        
+        $(".addProjectRow").append(projectRow);        
     });
-
+    parseProjectId(data);
 };
 
 function switchView(newView) {
@@ -67,13 +66,17 @@ function loadDetailsData(datas) {
  * Daten (data). Dazu muss ich über die Daten (data) iterieren. Wenn die werte übereinstimmen, dann hole ich mir diese ID!
  * **/
 function parseProjectId(data) {
-    var projectName = (this.innerHTML);
-    $.each(data, function (index, value) {
-        if (projectName === value['title']) {
-            var projectId = value['projectId'];
-            control.log(projectId);          
-        };
+    //wenn auf das td mit der Klasse projectName geklickt wird, wird der Text ausgelesen
+    $(".projectName").click(function (event) {
+        var projectName = (this.innerHTML);
+        $.each(data, function (index, value) {
+            if (projectName === value['title']) {
+                var projectId = value['projectId'];
+                console.log(projectId);
+            };
+            
+        }); 
+        
     });
-    return projectId;
 }
 

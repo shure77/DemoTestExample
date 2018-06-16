@@ -1,5 +1,4 @@
 ﻿var baseUrl = "http://wi3.technikum-wien.at:8080/ExampleWebServices/jsonRest/";
-var projekte = parseProjectId(data);
 
 function LoadOverviewProjectData(onError, onSuccess) {
     $.ajax({
@@ -16,7 +15,7 @@ function LoadOverviewProjectData(onError, onSuccess) {
 function LoadOverviewDetailsData(detError, detSuccess) {
     $.ajax({
         type: "GET",
-        url: baseUrl + "projectdetails?appToken=1234&deviceId=1234&projectId=" + projekte,
+        url: baseUrl + "projectdetails?appToken=1234&deviceId=1234&projectId=1",
         datas: "",
         dataType: 'jsonp',
         cache: false,
