@@ -1,0 +1,46 @@
+﻿.headRow {
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.headline {
+    margin-top: 15px;
+}
+
+.imagePosition {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.image {
+border: solid;
+border-color: black;
+border-width: 3px;
+border-radius: 25px;
+}
+
+.tableView {
+    margin-right: 16%;
+}
+
+.columnOne{
+    font-weight:bold;
+    width: 350px;
+}
+
+.tableBorders{
+    border: solid;
+    border-width: 3px;
+    border-radius: 25px;
+    border-color: black;
+    margin-bottom: 18px;
+}
+
+.inputField{
+    width:80%;
+}
+
+.createNew{
+
+}

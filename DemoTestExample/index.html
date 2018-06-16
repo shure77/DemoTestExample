@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/popper.js"></script>
+    <link href="stylesheet.css" rel="stylesheet" />
+    <script src="dataquery.js"></script>
+    <script src="controller.js"></script>
+    <script src="logic.js"></script>
+
+    <meta charset="utf-8" />
+    <title>Demo Test Example</title>
+</head>
+<body>
+
+    <div class="container body">
+
+        <!--PAGE 1-->
+        <!--HEADER-->
+        <div class="row headRow">
+            <div class="col-2 image">
+                <img src="https://image.flaticon.com/icons/svg/126/126486.svg" class="imagePosition" width="80px" height="80px" />
+            </div>
+            <div class="col-10">
+                <h1 class="headline">Demo Web Applikation</h1>
+            </div>
+        </div>
+
+        <!--Second Row-->
+
+        <div class="row headRow">
+            <div class="col-8">
+                <h2>Projektliste</h2>
+            </div>
+            <div class="col-4 buttonsTop">
+                <button type="button" class="btn btn-outline-primary createNew">NEU</button>
+                <button type="button" class="btn btn-outline-primary backButton">ZURÜCK</button>
+
+            </div>
+            
+        </div>
+
+        <!--List-->
+        <div id="page1">
+            <div class="row headRow tableView">
+                <table class="table table-hover">
+                    <tbody class="addProjectRow">
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--SHOW DETAILS-->
+        <div id="getDetails">
+            <div class="row headRow tableView">
+                <div class="col-12 tableBorders">
+                    <table class="table">
+                        <tbody>
+                            <tr class="description">
+                                <td class="columnOne">Bezeichnung</td>
+                                
+                            </tr>
+                            <tr class="contractor">
+                                <td class="columnOne">Auftraggeber</td>
+                                
+                            </tr>
+                            <tr class="street">
+                                <td class="columnOne">Strasse</td>
+                                
+                            </tr>
+                            <tr class="zip">
+                                <td class="columnOne">PLZ</td>
+                                
+                            </tr>
+                            <tr class="city">
+                                <td class="columnOne">Ort</td>
+                                
+                            </tr>
+                            <tr class="phone">
+                                <td class="columnOne">Telefon</td>
+                                
+                            </tr>
+                            <tr class="email">
+                                <td class="columnOne">email</td>
+                                
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-12 tableBorders">
+                    <table class="table">
+                        <tbody>
+                            <tr class="buildingtype">
+                                <td class="columnOne">Gebäudetyp</td>
+                                
+                            </tr>
+                            <tr class="buildingstreet">
+                                <td class="columnOne">Strasse</td>
+                                
+                            </tr>
+                                    <tr class="buildingzip">
+                                <td class="columnOne">PLZ</td>
+                                
+                            </tr>
+                            <tr class="buildingCity">
+                                <td class="columnOne">Ort</td>
+                                
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--CREATE NEW-->
+        <div id="createNew">
+        <div class="row headRow tableView">
+            <div class="col-12 tableBorders">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="columnOne">Bezeichnung</td>
+                            <td><input type="text" class="inputField"/></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">Auftraggeber</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">Strasse</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">PLZ</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">Ort</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">Telefon</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">email</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 tableBorders">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="columnOne">Gebäudetyp</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">Strasse</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">Straße</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">PLZ</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+                        <tr>
+                            <td class="columnOne">Ort</td>
+                            <td><input type="text" class="inputField" /></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+            </div>
+
+    </div>
+
+</body>
+</html>
